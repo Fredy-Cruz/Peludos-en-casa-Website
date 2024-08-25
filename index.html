@@ -16,14 +16,26 @@
 </head>
 <body>
     <header class="header">
-        <img src="https://res.cloudinary.com/drycov6o6/image/upload/v1724620970/PeludosEnCasa/ksjmdzsrhnpgnqdf3qp1.svg" alt="Logo Peludos en casa">
+        <a href="index.html"><img class="header-logo" src="https://res.cloudinary.com/drycov6o6/image/upload/v1724620970/PeludosEnCasa/ksjmdzsrhnpgnqdf3qp1.svg" alt="Logo Peludos en casa"></a>
+        <div class="header-login">
+            <a href="#" class="header-btn"><i class="fa-solid fa-user"></i> Iniciar sesión</a>
+        </div>
     </header>
     <section class="nav-bar">
-        <nav class="nav-bar-link">
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-        </nav>
+        <div class="nav-bar-container">
+            <div class="search-container">
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+                    <input type="text" placeholder="Buscar..." class="search-input">
+                    <i class="fa-solid fa-xmark" id="close-search"></i>
+                </div>
+            </div>
+            <nav class="nav-links">
+                <a class="nav-bar-link" href="#">Publicaciones</a>
+                <a class="nav-bar-link" href="#">Patrocinadores</a>
+                <a class="nav-bar-link" href="#">Información</a>
+            </nav>
+        </div>
     </section>
     <script src="./js/script.js"></script>
 </body>
