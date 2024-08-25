@@ -1,5 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
 :root{
     --primary-color: #D03531;
     --secondary-color: #272727;
     --terciary-color: #F9F8F9;
+    --title-font: "Oswald", sans-serif;
+    --subtitle-font: "Moderustic", sans-serif; 
+    --text-font: "Montserrat", sans-serif; 
 }
+
+/* Adjust rem values to equal 10px */
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+}
+
