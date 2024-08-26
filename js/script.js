@@ -1,8 +1,11 @@
-const footer = document.querySelector("footer");
+const footer = document.querySelector("footer");//we select the footer tag
 
+//We insert tags in the footer
 footer.insertAdjacentHTML('beforeend',`
     <div class="header-footer">
-        <img src="https://res.cloudinary.com/dksv7n9bg/image/upload/v1724626878/ny23uybcovzdog6zpoyr.svg" alt="">
+        <figure>
+            <img src="https://res.cloudinary.com/dksv7n9bg/image/upload/v1724626878/ny23uybcovzdog6zpoyr.svg" alt="logo de peludos en casa">
+        </figure>
     </div>
     <div class="information-footer">
         <h3>Información de Contacto</h3>

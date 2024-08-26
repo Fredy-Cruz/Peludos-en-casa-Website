@@ -18,3 +18,102 @@ body{
     font-size: 16px;
 }
 
+/* We define the footer template and apply a background color */
+footer{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "information1 socialnetworks"
+    "information2 socialnetworks"
+    "information3 socialnetworks"
+    ;
+    background-color: var(--primary-color);
+}
+
+/* We apply styles to the h3 tags */
+footer h3{
+    color: var(--terciary-color);
+    font-family: var(--subtitle-font);
+}
+
+/* We apply styles to the a tags */
+footer a{
+    text-decoration: none;
+    color: var(--terciary-color);
+    font-family: var(--text-font);
+    padding: 1%;
+}
+
+/* we apply pointer effect to the label a */
+footer a:hover{
+    font-size: 17px;
+    text-shadow: 5px 10px 8px black;
+    transition: 0.3s;
+}
+
+/* we apply style to the footer header */
+.header-footer{
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    background-color: var(--terciary-color);
+}
+
+/* we define the size of the image in the footer header */
+.header-footer img {
+    width: 15vh;
+}
+
+/* we apply style to information-footer */
+.information-footer{
+    margin: 2%;
+    grid-area: information1;
+    display: grid;
+    grid-column: auto;
+    width: 75%;
+    border-bottom: 4px solid white;
+}
+
+/* we apply style to ImportantLinks-footer */
+.ImportantLinks-footer{
+    margin: 2%;
+    grid-area: information2;
+    display: grid;
+    grid-column: auto;
+    width: 75%;
+    border-bottom: 4px solid white;
+}
+
+/* we apply style to MainSections-footer */
+.MainSections-footer{
+    margin: 2%;
+    grid-area: information3;
+    display: grid;
+    grid-column: auto;
+    width: 75%;
+}
+
+/* we apply style to SocialNetworks-footer */
+.SocialNetworks-footer{
+    margin: 8%;
+    grid-area: socialnetworks;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 4px solid white;
+    height: 75%;
+}
+
+/* we define the size of the icons */
+.SocialNetworks-footer i{
+    width: 5rem;
+}
+
+/* we apply pointer effect to the label i */
+.SocialNetworks-footer i:hover{
+    font-size: 50px;
+    text-shadow: 5px 10px 8px black;
+    cursor: pointer;
+    transition: 0.3s;
+}
