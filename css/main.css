@@ -22,10 +22,9 @@ body{
 footer{
     display: grid;
     grid-template-areas: 
-    "header header"
-    "information1 socialnetworks"
-    "information2 socialnetworks"
-    "information3 socialnetworks"
+    "header header header"
+    "information1 information2 information3"
+    "socialnetworks socialnetworks socialnetworks"
     ;
     background-color: var(--primary-color);
 }
@@ -70,8 +69,7 @@ footer a:hover{
     grid-area: information1;
     display: grid;
     grid-column: auto;
-    width: 75%;
-    border-bottom: 4px solid white;
+    
 }
 
 /* we apply style to ImportantLinks-footer */
@@ -80,8 +78,7 @@ footer a:hover{
     grid-area: information2;
     display: grid;
     grid-column: auto;
-    width: 75%;
-    border-bottom: 4px solid white;
+    
 }
 
 /* we apply style to MainSections-footer */
@@ -90,18 +87,18 @@ footer a:hover{
     grid-area: information3;
     display: grid;
     grid-column: auto;
-    width: 75%;
+    
 }
 
 /* we apply style to SocialNetworks-footer */
 .SocialNetworks-footer{
-    margin: 8%;
+    margin: 2%;
     grid-area: socialnetworks;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-left: 4px solid white;
+    border-top: 4px solid white;
     height: 75%;
 }
 
@@ -112,8 +109,22 @@ footer a:hover{
 
 /* we apply pointer effect to the label i */
 .SocialNetworks-footer i:hover{
-    font-size: 50px;
+    font-size: 25px;
     text-shadow: 5px 10px 8px black;
     cursor: pointer;
     transition: 0.3s;
+}
+
+/* mediaquery for smartphones and small tablets*/
+@media (min-width: 320px) and (max-width: 768px){
+    footer{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "information1"
+        "information2"
+        "information3"
+        "socialnetworks"
+        ;
+    }
 }
