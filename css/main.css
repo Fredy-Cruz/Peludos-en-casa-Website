@@ -86,18 +86,15 @@ body{
     position:fixed;
     padding: 2rem;
     border-radius: 2rem;
-    left: 20%;
-    top: 20%; 
     z-index: 1; 
-    width: 60%; 
     overflow: auto;
     background-color: var(--secondary-color); /* Fondo negro con opacidad */
 }
 
 .information-modal-close {
-    color: #aaa;
+    color: var(--terciary-color);
     float: right;
-    font-size: 28px;
+    font-size: 2.8rem;
     font-weight: bold;
 }
 
@@ -117,8 +114,6 @@ body{
     text-align: justify;
 }
 
-
-
 /*-----------------------------------HOVERS-------------------------------------*/
 .information-card-btn:hover{
     background-color: var(--primary-color);
@@ -135,25 +130,45 @@ body{
 
 /*Small screens*/
 @media (min-width: 320px) and (max-width: 480px){
-    
+    .information-modal{
+        left: 2.5%;
+        top: 1%; 
+        width: 95%;
+    }
 }
 
 /*Smartphones*/
 @media (min-width: 481px) and (max-width: 768px){
-    
+    .information-modal{
+        left: 5%;
+        top: 5%; 
+        width: 90%;
+    }
 }
 
 /*tablet ad landscape*/
 @media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape){
-    
+    .information-modal{
+        left: 10%;
+        top: 10%; 
+        width: 80%;
+    }
 }
 
 /*Desktop*/
 @media (min-width: 1025px) and (max-width: 1280px){
-    
+    .information-modal{
+        left: 15%;
+        top: 15%; 
+        width: 70%;
+    }
 }
 
 /*Big Screens*/
 @media (min-width: 1281px){
-    
+    .information-modal{
+        left: 20%;
+        top: 20%; 
+        width: 60%;
+    }
 }
