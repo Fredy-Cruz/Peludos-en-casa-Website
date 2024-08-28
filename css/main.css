@@ -18,3 +18,43 @@ body{
     font-size: 16px;
 }
 
+.information{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+}
+
+.information-card{
+    display: grid;
+    width: 100%;
+    height: 20rem;
+    grid-template-rows: repeat(3, 1fr);
+    border: var(--primary-color) 0.5rem solid;
+    border-radius: 1rem;  
+}
+
+/*-----------------------------------MEDIA-QUERY-------------------------------------*/
+
+/*Small screens*/
+@media (min-width: 320px) and (max-width: 480px){
+    
+}
+
+/*Smartphones*/
+@media (min-width: 481px) and (max-width: 768px){
+    
+}
+
+/*tablet ad landscape*/
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape){
+    
+}
+
+/*Desktop*/
+@media (min-width: 1025px) and (max-width: 1280px){
+    
+}
+
+/*Big Screens*/
+@media (min-width: 1281px){
+    
+}
