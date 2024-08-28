@@ -20,9 +20,19 @@ body{
 
 /* ---------------------------------------------INFORMATION----------------------------------------- */
 .information{
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-top: var(--primary-color) 1rem solid;
+    border-bottom: var(--primary-color) 1rem solid;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 35rem)); 
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 31.5rem)); 
     gap: 2rem;
+    justify-content: center;
+    align-content: center;
+    background-image: url(https://res.cloudinary.com/dhqkospsd/image/upload/v1724830700/gskrshripfo4agzzyhj2.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .information-card{
@@ -30,16 +40,17 @@ body{
     width: 100%;
     height: 30rem;
     grid-template-rows: 1.5fr 2.5fr 1fr 1fr;
-    border: var(--primary-color) 0.5rem solid;
+    background-color: rgba(255, 255, 255, 0.844);
     border-radius: 2rem;  
-    justify-items: center;
-    align-items: center;
+    justify-items: center;  
+    align-items: center; 
+    box-shadow: 0 0.5rem 0.5rem 0 var(--primary-color);
 }
 
 .information-card-title{
     font-family: var(--subtitle-font);
     color: var(--primary-color);
-    font-size: 3rem;
+    font-size: 2.6rem;
     font-weight: 500;
     text-align: center;
 }

@@ -1,15 +1,15 @@
-/*Open the respectice Modal for each button */
-document.getElementById("openModal-1").onclick = function() {
-    document.getElementById("information-modal-1").style.display = "block";
+/*Open the respective Modal for each button */
+const openModal = (OpenModal, InfModal)=>{
+    document.getElementById(OpenModal).onclick = function() {
+        document.getElementById(InfModal).style.display = "block";
+    }
 }
 
-document.getElementById("openModal-2").onclick = function() {
-    document.getElementById("information-modal-2").style.display = "block";
-}
+/*Calling the function */
+openModal("openModal-1", "information-modal-1");
+openModal("openModal-2", "information-modal-2");
+openModal("openModal-3", "information-modal-3");
 
-document.getElementById("openModal-3").onclick = function() {
-    document.getElementById("information-modal-3").style.display = "block";
-}
 
 /*Close the modal when clic the respective span x*/
 document.querySelector(".information-modal-close-1").onclick = function() {
