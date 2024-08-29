@@ -176,3 +176,229 @@ body{
         margin: 0 1rem;
     }
 }
+
+
+/* begin - Seccion Anuncios */
+.row {
+  display: flex; /* Hacemos que los elementos se ubiquen uno al lado del otro */
+  flex-wrap: wrap; /* Permitimos que los elementos se ubiquen en varias filas */
+  justify-content: center; /* Centramos horizontalmente los elementos */
+}
+
+.colum {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh; /* Establecemos el alto del contenedor en 100vh */
+  display: flex; /* Establecemos el display en flex */
+  flex-wrap: wrap; /* Permite que las tarjetas se ajusten en varias filas */
+  justify-content: center; /* Centramos horizontalmente las tarjetas */
+  align-items: center; /* Centramos verticalmente las tarjetas */
+}
+
+.our-team {
+  max-width: 300px; /* Establecemos un ancho máximo */
+  
+  display: flex; /* Establecemos el display en flex */
+  justify-content: center; /* Centramos horizontalmente los elementos */
+  flex-wrap: wrap; /* Permitimos que los elementos se ubiquen en varias filas */
+  height: 350px;
+  padding: 30px 0 40px;
+  margin-bottom: 10px;
+  background-color: #F9F8F9; /* Color de fondo */
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+
+.info {
+  display: none;
+}
+
+.our-team .team-content {
+  padding: 20px;
+  background-color: #F9F8F9; /* Color de fondo */
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.our-team .team-content .name {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.our-team .team-content .title {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.our-team .team-content .info {
+  margin-top: 20px;
+}
+
+.our-team .more-info {
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  background-color: #D03531; /* Color de fondo */
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%); /* Centramos horizontalmente el botón */
+  transition: all 0.5s ease 0s;
+  text-align: center;
+  cursor: pointer;
+}
+
+.our-team:hover .more-info {
+  bottom: 0;
+}
+
+.our-team .more-info a {
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+  color: #F9F8F9; /* Color del texto */
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  border-radius: 20px; /* Agregamos un radio de 20px */
+}
+
+.our-team .more-info a:hover {
+  color: #D03531; /* Color del texto */
+  background-color: #F9F8F9; /* Color de fondo */
+  margin: 0 20px;
+
+}
+
+.our-team .picture {
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+
+.our-team .picture::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #D03531; /* Color de la forma */
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .picture::before {
+  height: 100%;
+}
+
+.our-team .picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #D03531; /* Color de la forma */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.our-team .picture img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+  object-fit: cover;
+  
+}
+
+.our-team:hover .picture img {
+  box-shadow: 0 0 0 14px #F9F8F9; /* Color del borde */
+  transform: scale(0.7);
+}
+
+.our-team .title {
+  display: block;
+  font-size: 15px;
+  color: #272727; /* Color del texto */
+  text-transform: capitalize;
+}
+
+/* Agregamos estilos para el modal */
+.modal {
+  position: fixed;
+  top: 50%; /* Centramos el modal verticalmente */
+  left: 50%; /* Centramos el modal horizontalmente */
+  transform: translate(-50%, -50%); /* Ajustamos la posición del modal */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 400px;
+  height: auto;
+  margin: 30px auto;
+  overflow: auto; /* Agregamos overflow auto para que el contenido del modal se ajuste */
+}
+
+.modal-content img {
+  max-width: 50%;
+  height: auto;
+  margin: 10px auto; 
+}
+
+.close-modal {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.close-modal:hover {
+  background-color: #444;
+}
+
+/* Estilos adicionales para hacer la tarjeta responsive */
+.our-team {
+  max-width: 300px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .our-team {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .our-team {
+    max-width: 200px;
+  }
+}
+/* end - Seccion Anuncios */
