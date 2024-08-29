@@ -1,4 +1,4 @@
-//Seccion anuncios 
+// Begin - Seccion anuncios 
 // Selecciona todos los botones "Mas información"
 const buttons = document.querySelectorAll('.more-info a');
 
@@ -53,3 +53,4 @@ function showModal(modalContent) {
     modal.remove();
   });
 }
+// end - Seccion anuncios
