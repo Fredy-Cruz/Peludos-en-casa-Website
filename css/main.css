@@ -18,6 +18,7 @@ body{
     font-size: 16px;
 }
 
+/* begin - Seccion Anuncios */
 .row {
   display: flex; /* Hacemos que los elementos se ubiquen uno al lado del otro */
   flex-wrap: wrap; /* Permitimos que los elementos se ubiquen en varias filas */
@@ -240,4 +241,5 @@ body{
     max-width: 200px;
   }
 }
+/* end - Seccion Anuncios */
 
