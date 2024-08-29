@@ -179,6 +179,11 @@ body{
 
 
 /* begin - Seccion Anuncios */
+.anuncios {
+    position: relative;
+    z-index: 1;
+  }
+
 .row {
   display: flex; /* Hacemos que los elementos se ubiquen uno al lado del otro */
   flex-wrap: wrap; /* Permitimos que los elementos se ubiquen en varias filas */
@@ -192,7 +197,7 @@ body{
 
 .container {
   width: 100%;
-  height: 100vh; /* Establecemos el alto del contenedor en 100vh */
+  height: auto; /* Establecemos el alto del contenedor en auto para que se adapte */
   display: flex; /* Establecemos el display en flex */
   flex-wrap: wrap; /* Permite que las tarjetas se ajusten en varias filas */
   justify-content: center; /* Centramos horizontalmente las tarjetas */
@@ -201,7 +206,6 @@ body{
 
 .our-team {
   max-width: 300px; /* Establecemos un ancho máximo */
-  
   display: flex; /* Establecemos el display en flex */
   justify-content: center; /* Centramos horizontalmente los elementos */
   flex-wrap: wrap; /* Permitimos que los elementos se ubiquen en varias filas */
@@ -391,10 +395,19 @@ body{
 }
 
 @media (max-width: 768px) {
-  .our-team {
-    max-width: 250px;
+    .information {
+      position: relative;
+      z-index: 0;
+    }
+  
+    .anuncios {
+      z-index: 1;
+    }
+
+    .our-team {
+        max-width: 100%;
+      }
   }
-}
 
 @media (max-width: 480px) {
   .our-team {
